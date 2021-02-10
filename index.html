@@ -1,9 +1,10 @@
 <html>
 <head>
     <title>DOM PLAY</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="portal.css" />
 
     <style>
-
 /*
 
         #clickSpans span {
@@ -17,15 +18,27 @@
 <body>
 
 
-    <h1> DOM PLAY ASSIGNMENT GOES HERE<h1>
+
+    <h1 style="background-color:rgb(255, 58, 58);">SCENE III. A room in Polonius' house.<h1>
         <div id="clickSpans">
-            <p><span data-actor="hamlet">Hamlet: To be or not to be, that is the question</span></p>
-            <p><span data-actor="skull">Skull: Don't ask me, I'm only a skull!</span></p>
-            <p><span data-actor="hamlet">Hamlet: What did you say?</span></p>
-            <p><span data-actor="skull">Skull: Nothing, I'm only a figment of your imagination!</span></p>
-            <p><span data-actor="hamlet">Hamlet: Oh good. I thought I was going crazy.</span></p>
+            <p><span data-actor="laertes">LAERTES: I'm tired and hungry and my sister is the favorite child. Is anyone out there?</span></p>
+            <p><span data-actor="ophelia">OPHELIA: What's wrong with you?</span></p>
+            <p><span data-actor="laertes">LAERTES: Well, Hamlet is a guy I know. He's incredibly arrogant and dumb. So, why does he smell good?</span></p>
+            <p><span data-actor="ophelia">OPHELIA: I see where you're coming from.</span></p>
+            <p><span data-actor="laertes">LAERTES: I have all these problems and I'm terrified. But I'll be careful, because there is safety in the feeling of fear.</span></p>
+            <p><span data-actor="ophelia">OPHELIA: You bring up a good point. I hate Hamlet, too.</span></p>
+            <p><span data-actor="laertes">LAERTES: I need to go, my dad's looking for me.</span></p>
         </div>
-        
+    <h1 style="background-color:rgb(255, 58, 58);">Enter POLONIUS<h1>
+        <div id="clickSpans">
+            <p><span data-actor="polonius">LORD POLONIUS: You should smile more. Laertes, go to France and become a chief, there you will find friends and a husband.</span></p>
+            <p><span data-actor="laertes">LAERTES: I will do as you say.</span></p>
+            <p><span data-actor="polonius">LORD POLONIUS: No time like the present.</span></p>
+            <p><span data-actor="laertes">LAERTES: Bye Ophelia, don't forget what I said.</span></p>
+            <p><span data-actor="ophelia">OPHELIA: I won't</span></p>
+            <p><span data-actor="laertes">LAERTES: OK, see you later.</span></p>
+        </div>
+    <h1 style="background-color:rgb(255, 58, 58);">EXIT</h1>
         <script>
 
             //changed const to var to make spans be globally available
@@ -54,7 +67,7 @@
 
                 }else{//not current actor, no highlight
 
-                    mySpan.style.backgroundColor = 'white';
+                    mySpan.style.backgroundColor = 'rgb(153, 228, 199)';
                     mySpan.style.fontWeight = 'normal';
                 }
 
